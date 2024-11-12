@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my professional space</p>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="visitor-counter">
+        <h2>Visitor Counter</h2>
+        <p>Website Visits: <span id="visit-count">0</span></p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="skill-bar">
+                <div class="skill-fill" data-skill="90"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="skill-bar">
+                <div class="skill-fill" data-skill="80"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+                <div class="skill-fill" data-skill="70"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>React</h3>
+            <div class="skill-bar">
+                <div class="skill-fill" data-skill="60"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a dedicated professional with a passion for technology and design. With over 5 years of experience in the industry, I strive to create impactful solutions.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="images/project-image1.jpg" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>Brief description of the project, technologies used, and your role.</p>
+            <a href="https://example.com/project1" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <img src="images/project-image2.jpg" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>Brief description of the project, technologies used, and your role.</p>
+            <a href="https://example.com/project2" target="_blank">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="awards">
+        <h2>Awards</h2>
+        <ul>
+            <li>Best Developer Award - 2023</li>
+            <li>Design Excellence Award - 2022</li>
+            <li>Innovation in Tech Award - 2021</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"An exceptional developer with a keen eye for design!"</p>
+            <cite>- Happy Client</cite>
+        </blockquote>
+        <blockquote>
+            <p>"A great team player who delivers results!"</p>
+            <cite>- Former Colleague</cite>
+        </blockquote>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p><a href="https://yourblog.com" target="_blank">Visit my blog for insights and articles!</a></p>
+    </section>
+
+    <section id="cv">
+        <h2>Download My CV</h2>
+        <p>You can download my CV <a href="path/to/your-cv.pdf" download>here</a>.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
